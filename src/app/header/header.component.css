@@ -1,0 +1,44 @@
+.header {
+    background-color: rgb(18, 18, 18);
+    height: 44px;
+    width: 100%;
+    opacity: 0.78;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    position: fixed;
+    z-index: 50;
+}
+
+.header-ico-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 76%;
+}
+
+.apple-header-ico {
+    fill: rgb(217, 217, 217);
+}
+
+.header-icons {
+    color: rgb(217, 217, 217);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.search-header-ico {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    fill: rgb(217, 217, 217);
+}
+
+.basket-header-ico {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    fill: rgb(217, 217, 217);
+}

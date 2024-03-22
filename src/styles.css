@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif !important; */
+    line-height: 1.47059 !important;
+    font-weight: 400;
+    letter-spacing: -0.022em !important;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-style: normal;
+}

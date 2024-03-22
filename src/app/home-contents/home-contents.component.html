@@ -1,0 +1,19 @@
+<div class="contents-main-div">
+    <div *ngFor="let content of contents" class="content-div">
+        <div class="content-text">
+            <h1 class="content-title" [ngStyle]="{'color': content?.title?.color}">
+                {{content?.title?.name}}
+            </h1>
+            <h2 class="content-sub-title" [ngStyle]="{'color': content?.sub_title?.color}">
+                {{content?.sub_title?.name}}
+            </h2>
+            <div class="content-hyperlinks">
+                <a *ngFor="let hyperlink of content?.hyperlinks" class="content-hyperlink" [ngStyle]="{'color': hyperlink?.color}">
+                    {{hyperlink?.title}}
+                    <svg class="content-link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                </a>
+            </div>
+        </div>
+        <img [src]="getResponsiveImageUrl(content)" class="contents-img">
+    </div>
+</div>
